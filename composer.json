@@ -1,0 +1,22 @@
+{
+    "name": "phellow/gettext",
+    "description": "Gettext translator for intl and some other useful gettext stuff",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Blos",
+            "email": "christian.blos@gmx.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Phellow\\Gettext\\": "src/" }
+    },
+    "require": {
+        "phellow/intl": "1.*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
