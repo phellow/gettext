@@ -145,6 +145,8 @@ class JavascriptGenerator
                 $key = $matches[1];
             } elseif (preg_match('/^msgstr "(.*)"$/', $line, $matches)) {
                 $locale[$key] = $matches[1];
+            } elseif (preg_match('/^"(.*)"$/', $line, $matches)) {
+                $locale[$key] .= $matches[1];
             } elseif (preg_match('/^msgid_plural "(.*)"$/', $line, $matches)) {
                 $locale[$key] = [];
             } elseif (preg_match('/^msgstr\[([0-9])\] "(.*)"$/', $line, $matches)) {
